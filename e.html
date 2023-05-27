@@ -51,5 +51,15 @@
     $(".disableme").on("click",function(e){
         e.preventDefault();
     });
+    $(document).ready(function(){
+      $.ajax({
+        url:"coma.php",
+        method:"get",
+        success:function(d){
+          console.log(d)
+        },
+      })
+
+    });
   </script>  
 </html>
